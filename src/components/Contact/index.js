@@ -137,16 +137,17 @@ const Contact = () => {
   const form = useRef();
 
 
-const handleSubmit = (e) => {
-  e.preventDefault();
-  emailjs.sendForm("service_vlyl88c", "template_yb05638", form.current, 'DgK3w7FY9IK59TwFq')
-    .then((result) => {
-      setOpen(true);
-      form.current.reset();
-    }, (error) => {
-      console.log(error.text);
-    });
-};
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    emailjs.sendForm("service_vlyl88c", "template_yb05638", form.current, 'DgK3w7FY9IK59TwFq')
+      .then((result) => {
+        setOpen(true);
+        form.current.reset();
+      }, (error) => {
+        console.log(error.text);
+      });
+  };
+  
 
   return (
     <Container>
