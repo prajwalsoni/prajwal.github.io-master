@@ -75,10 +75,10 @@ export const skills = [
   {
     title: "Backend",
     skills: [
-      {
-        name: "Node Js",
-        image: "https://nodejs.org/static/images/logo.svg",
-      },
+      // {
+      //   name: "Node Js",
+      //   image: "https://nodejs.org/static/images/logo.svg",
+      // },
     
       // {
       //   name: "Graph Ql",
